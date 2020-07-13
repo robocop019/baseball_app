@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_13_223939) do
+ActiveRecord::Schema.define(version: 2020_07_13_224920) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2020_07_13_223939) do
     t.integer "stolen_bases"
     t.integer "walks"
     t.integer "hbp"
-    t.integer "player"
+    t.integer "player_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(version: 2020_07_13_223939) do
     t.integer "earned_runs"
     t.integer "strikeouts"
     t.integer "walks"
-    t.integer "player"
+    t.integer "player_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 2020_07_13_223939) do
     t.string "name"
     t.integer "number"
     t.string "position"
-    t.integer "team"
+    t.integer "team_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
