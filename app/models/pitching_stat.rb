@@ -1,2 +1,0 @@
-class PitchingStat < ApplicationRecord
-end
