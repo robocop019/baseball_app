@@ -20,6 +20,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'faker', '~> 2.13'
 
+gem 'seed_dump', '~> 3.2', '>= 3.2.4'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
