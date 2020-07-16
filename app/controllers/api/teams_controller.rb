@@ -1,6 +1,6 @@
 class Api::TeamsController < ApplicationController
   def index
-    @teams = Team.all
+    @teams = Team.all.order(:name)
 
     render 'index.json.jbuilder'
   end
