@@ -12,6 +12,8 @@ class Player < ApplicationRecord
   end
 
   def slg
-    
+    singles = hits - (doubles + triples + home_runs)
+    slg = (singles.to_f + (doubles.to_f * 2) + (triples.to_f * 3) + (home_runs.to_f * 4)) / at_bats
+    slg.round(3)
   end
 end

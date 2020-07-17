@@ -1,6 +1,8 @@
 class Api::PlayersController < ApplicationController
   def index
-    @players = Player.all.order(:number)
+    team = params[:team_id]
+
+    @players = Player.where(team_id: team).order(:number)
 
     render 'index.json.jbuilder'
   end
