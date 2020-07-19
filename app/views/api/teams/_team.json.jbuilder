@@ -3,8 +3,6 @@ json.name team.name
 json.wins team.wins
 json.losses team.losses
 json.ties team.ties
-json.bio team.bio
+json.division team.division
 
-# json.players do 
-#   json.array! team.players, partial: 'api/players/player', as: :player
-# end
+# json.games_back team.games_back
