@@ -35,4 +35,5 @@ json.pitching_stats do
   json.earned_runs player.earned_runs
   json.strikeouts player.strikeouts
   json.walks player.walks_given
+  json.era player.era
 end
